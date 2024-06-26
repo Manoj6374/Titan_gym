@@ -749,7 +749,7 @@ footer .content i {
     grid-template-columns: 1fr;
   }
   .gear-list {
-    gap: 20px;
+    gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
   .toggle-btn {
