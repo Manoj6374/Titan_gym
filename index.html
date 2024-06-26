@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Gym logo (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.CSS" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="overlay"></div>            
+     
+    <div class="form-container">
+        <form class="form form-group">
+            <button class="close" onclick="cancel(event)">X</button>
+                        <p class="title">Register </p>
+             <div class="flex">
+                <label>
+                    <input class="input" id="name" type="text" placeholder="" required=""  >
+                    <span>Firstname</span>
+                </label>
+        
+                <label>
+                    <input class="input" type="text"  placeholder="" required="">
+                    <span>Lastname</span>
+                </label>
+            </div>  
+                
+            <label>
+                <input class="input" id="email" type="email" placeholder="" required="">
+                <span>Email</span>
+            </label> 
+                
+            <label>
+                <input class="input" id="pass" type="password" placeholder="" required="">
+                <span>Password</span>
+            </label>
+            <label>
+                <input class="input" id="cpass" type="password" placeholder="" required="">
+                <span>Confirm password</span>
+            </label>
+            
+            <label for="" class="signin"> <input type="checkbox" name="" id="" required>Accept terms & condition</label>    
+            <button type="submit" class="submit">Submit</button>
+        </form></div>
+
+    
+        <div class="side-nav" id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#timings">Timings</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#gear">Gym Gear</a></li>
+                    <li><a href="#nutrition">Supplements</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="logo" >
+                    <img src="images/logo.png" alt="Gym Logo">
+                </div>
+                <nav class="header-nav ">
+                    <ul class="link">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#timings">Timings</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                        <li><a href="#gear">Gym Gear</a></li>
+                        <li><a href="#nutrition"> Supplements</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="cta">
+                    <a href="#" class="btn" onclick="show()">Log in</a>
+                </div>
+
+                  
+                <button class="toggle-btn" id="toggleBtn"><i class="fas fa-dumbbell"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="bg-img">
+            <div class="img-overlay">
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="type">Build Your Body</h1>
+                <p>Join our gym and start your fitness journey today!</p>
+                <a href="#register" class="btn">Get Started</a>
+            </div>
+        </div>            
+        </section>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="container">
+            <p>Welcome to TITAN GYM, where we turn fitness goals into reality. Our state-of-the-art facility and
+                certified trainers provide everything you need for an effective and enjoyable workout experience. Join
+                us and become part of a supportive community dedicated to health, strength, and well-being. Let's
+                achieve greatness together.</p>
+            <img src="images/gym.jpg" alt="img">
+        </div>
+        <div class="about-card">
+            <div class="card" data-aos="fade-right">
+                <i class="fa-solid fa-dumbbell"></i>
+                <h4>Strength Training</h4>
+                <p>In this program, you are trained to improve your strength through any exercises.</p>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <i class="fa-solid fa-person-running"></i>
+                <h4>Cardio Training</h4>
+                <p>In this program, you are trained to sequential moves in range of 20 until 30 minutes.</p>
+            </div>
+            <div class="card" data-aos="fade-right">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <h4>Fat Burning</h4>
+                <p>This program, you are trained to do suquential moves in range of 20 until 30 minutes.</p>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h4>Health Fitness</h4>
+                <p>This programs is designed for those who exercises only for their body fitness not body building.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages"  >
+        <div class="container">
+            <h2>Packages</h2>
+            <div class="package-cards" >
+                <div class="card" data-aos="zoom-out-down">
+                    <p class="icon"><i class="fa-solid fa-heart"></i>
+                    </p>icon
+                    <h3>Basic Package</h3>
+                    </p>
+                    <h1>$30/Month</h1>
+                    <p><i class="fa-solid fa-circle-check"></i>Unlimited acess to yoga class</p>
+                    <p><i class="fa-solid fa-circle-check"></i>24/7 Gym access</p>
+                    <p><i class="fa-solid fa-circle-check"></i>Use of locker & showers</p>
+                    <button class="join">Join Now</button>
+                </div>
+                <div class="card premium" data-aos="zoom-in-down">
+                    <p class="pre"><i class="fa-solid fa-gem"></i> </p>
+                    <h3>Premium Package</h3>
+                    <h1>$50/Month</h1>
+                    <p><i class="fa-solid fa-circle-check"></i>Unlimited acess to yoga class</p>
+                    <p><i class="fa-solid fa-circle-check"></i>24/7 Gym access</p>
+                    <p><i class="fa-solid fa-circle-check"></i>Use of locker & showers</p>
+                    <p><i class="fa-solid fa-circle-check"></i>Week days pool access</p>
+                    <button class="join">Join Now</button>
+                </div>
+                <div class="card" data-aos="zoom-in-right">
+                    <p class="icon"> <i class="fa-solid fa-crown"></i></p>
+
+                    <h3>VIP Package</h3>
+                    <h1>$80/Month</h1>
+                    <p><i class="fa-solid fa-circle-check"></i>Unlimited acess to yoga class</p>
+                    <p><i class="fa-solid fa-circle-check"></i>24/7 Gym access</p>
+                    <p><i class="fa-solid fa-circle-check"></i>Use of locker & showers</p>
+                    <p><i class="fa-solid fa-circle-check"></i>Access to pool 7 days a week</p>
+                    <p><i class="fa-solid fa-circle-check"></i>12% off on all store products</p>
+                    <p><i class="fa-solid fa-circle-check"></i>Free gym t-shirt</p>
+                    <button class="join">Join Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timings Section -->
+    <section id="timings" class="timings">
+        <div class="container">
+            <h2>Timings</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Opening Time</th>
+                        <th>Closing Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>6:00 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>6:00 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>6:00 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>6:00 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>6:00 AM</td>
+                        <td>10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>8:00 AM</td>
+                        <td>8:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>8:00 AM</td>
+                        <td>8:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers" class="section special-offers">
+        <div class="container">
+            <h2>Special Offers</h2>
+            <div class="offers-grid">
+                <div class="offer-item" data-aos="slide-up">
+                    <img src="images/membership.jpeg" alt="Offer 1">
+                    <h3>50% Off First Month</h3>
+                    <p>Sign up today and get 50% off your first month of membership.</p>
+                </div>
+                <div class="offer-item" data-aos="slide-down">
+                    <img src="images/personal.jpeg" alt="Offer 2">
+                    <h3>Free Personal Training Session</h3>
+                    <p>Get a free personal training session when you join our gym.</p>
+                </div>
+                <div class="offer-item" data-aos="slide-up">
+                    <img src="images/refer.png" alt="Offer 3">
+                    <h3>Refer a Friend</h3>
+                    <p>Refer a friend and both of you get a 20% discount on your next month.</p>
+                </div>
+                <div class="offer-item" data-aos="slide-down">
+                    <img src="images/diet.jpeg" alt="Offer 4">
+                    <h3>Free Nutrition Plan</h3>
+                    <p>Receive a free nutrition plan when you sign up for a 6-month membership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gym Gear Section -->
+    <section id="gear" class="gear">
+        <div class="container">
+            <h2>Gym Gear</h2>
+            <div class="gear-list">
+                <div class="gear-item">
+                    <img src="images/dumbbells.jpeg" alt="">
+                    <h3>Dumbbells</h3>
+                </div>
+                <div class="gear-item">
+                    <img src="images/Resistance Bands.jpeg" alt="">
+                    <h3>Resistance Bands</h3>
+                </div>
+                <div class="gear-item">
+                    <img src="images/barbells.jpeg" alt="">
+                    <h3>Barbells and Weight Plates</h3>
+                </div>
+                
+                <div class="gear-item">
+                    <img src="images/Kettlebells.jpeg" alt="">
+                    <h3>Kettlebells</h3>
+                </div>
+                
+                <div class="gear-item">
+                    <img src="images/Ellipticals.jpeg" alt="">
+                    <h3>Ellipticals</h3>
+                </div>
+                
+                <div class="gear-item">
+                    <img src="images/Stationary Bikes.jpeg" alt="">
+                    <h3>Stationary Bikes</h3>
+                </div>
+                
+                <div class="gear-item">
+                    <img src="images/Weight Benches.jpeg" alt="">
+                    <h3>Weight Benches</h3>
+                </div>
+                
+                <div class="gear-item">
+                    <img src="images/Treadmills.jpeg" alt="">
+                    <h3>Treadmills</h3>
+                </div>
+                
+                <div class="gear-item">
+                    <img src="images/Yoga Mats.jpeg" alt="">
+                    <h3>yoga Mats</h3>
+                </div>
+                <div class="gear-item">
+                    <img src="images/Squat Racks.jpeg" alt="">
+                    <h3>Squat Racks</h3>
+                </div>
+                <div class="gear-item">
+                    <img src="images/Pull-Up Bars.jpeg" alt="">
+                    <h3>Pull-Up Bars</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition & Supplements Section -->
+    <section id="nutrition" class="section nutrition-supplements">
+        <div class="container">
+            <h2>Nutrition & Supplements</h2>
+            <div class="supplements-grid">
+                <div class="supplement-item" data-aos="zoom-in-right">
+                    <img src="images/nutrition1.jpeg" alt="Protein Powder">
+                    <h3>Protein Powder</h3>
+                    <p>High-quality whey protein to help you build muscle and recover faster.</p>
+                </div>
+                <div class="supplement-item" data-aos="zoom-in-up">
+                    <img src="images/vitamins.jpeg" alt="Vitamins">
+                    <h3>Vitamins</h3>
+                    <p>Essential vitamins and minerals to keep your body functioning at its best.</p>
+                </div>
+                <div class="supplement-item" data-aos="zoom-in-down">
+                    <img src="images/pre-workout.jpeg" alt="Pre-Workout">
+                    <h3>Pre-Workout</h3>
+                    <p>Boost your energy and performance with our pre-workout supplements.</p>
+                </div>
+                <div class="supplement-item" data-aos="zoom-in-right">
+                    <img src="images/BCAAs.jpeg" alt="Omega-3">
+                    <h3>Omega-3</h3>
+                    <p>Support your heart health with our pure omega-3 supplements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <!-- Footer -->
+    <footer id="contact">
+        
+        <div class="map" data-aos="slide-right">
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="200" height="250" style="border:0;"
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="social">  
+            <h1>Our Pages</h1>  
+            <a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="facebook"  href="#"><i class="fa-brands fa-facebook"></i> </a>
+            <a class="twitter"   href="#"><i class="fa-brands fa-twitter"></i>  </a>
+            <a class="whatsapp"  href="#"><i class="fa-brands fa-whatsapp"></i> </a>
+            </div>
+        </div>
+        <div class="content">
+            <h3><i class="fa-solid fa-check-to-slot"></i>24/7 Access</h3>
+            <h3><i class="fa-solid fa-check-to-slot"></i>Improved Mental Health</h3>
+            <h3><i class="fa-solid fa-check-to-slot"></i>Professional Guidance</h3>
+            <h3><i class="fa-solid fa-check-to-slot"></i>Structured Environment</h3>
+            <h3><i class="fa-solid fa-check-to-slot"></i>Customized Workouts</h3>
+        </div>
+        <div class="footer-img" data-aos="slide-left">
+            <img src="images/footer.png" alt="">
+        </div>
+        
+    </footer>
+    <div class="social-container">
+        <p>&copy; 2024 Titan Gym. All reserved.</p>
+        
+        </div>
+    
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+
+</html>
