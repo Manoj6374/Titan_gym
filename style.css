@@ -15,7 +15,18 @@ body {
   font-family: "Poppins", sans-serif;
  
 }
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  
+} */
 .container {
   width: 80%;
   margin: auto;
@@ -348,9 +359,7 @@ section .container {
   cursor: pointer;
 }
 /* Timings Section */
-.timings {
-  padding: 60px;
-}
+
 
 .timings table {
   width: 100%;
@@ -732,18 +741,22 @@ footer .content i {
   header .container {
     display: flex;
   }
- 
+.container{
+  width: 90%;
+}
 
   .offers-grid {
     grid-template-columns: 1fr;
   }
   .gear-list {
+    gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
   .toggle-btn {
     display: block;
   }
   .about .container {
+    flex-direction: column;
     margin: 0;
   }
   .form-container {
